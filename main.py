@@ -7,8 +7,11 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 # system date and time manipulation
 import datetime
-# get environment variablesd
+# get environment variables
 import os
+# load environment variables
+from dotenv import load_dotenv
+load_dotenv()
 
 # get current system time and store in 'now' variable
 now = datetime.datetime.now()
